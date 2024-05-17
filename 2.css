@@ -1,0 +1,129 @@
+div {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 2000px;
+}
+.nav-container {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 10px;
+}
+.nav-item {
+    margin-right: 10px;
+}
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url('../img/shoes.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(70%);
+    padding: 1px;
+    text-align: center;
+    position: relative;
+}
+
+.main-title {
+    color: white;
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+.content {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main-button {
+    padding: 15px;
+    font-size: 20px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    width: 150px;
+}
+
+.main-box {
+    background-color: bisque;
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    position: relative;
+    top: 200px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+form {
+    position: relative;
+    top: 220px;
+}
+
+input[type=text] {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.pseudo::first-letter {
+    color: red;
+    font-size: 30px;
+}
+.pseudo::after {
+    content: 'content after';
+    color: blue;
+    font-size: 20px;
+}
+progress {
+    /*기본 배경은 없애주는게 좋습니다*/
+    -webkit-appearance: none;
+    -moz-appearance : none;
+    appearance: none;
+    background: white;
+    /* IE10 호환성용 */
+    color: red;
+}
+progress::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+}
+progress::-webkit-progress-value {
+    background-color: red;
+    border-radius: 2px;
+}
+
+/*파이어폭스 호환성을 위해*/
+progress::-moz-progress-bar {
+    background-color: red;
+    border-radius: 2px;
+}
+
+input[type=file]::-webkit-file-upload-button {
+    color: red;
+    border: none;
+}
+
+input[type=text]::-webkit-input-placeholder {
+    color: red;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-title {
+        font-size: 20px;
+    }
+}
